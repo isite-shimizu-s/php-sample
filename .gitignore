@@ -1,0 +1,8 @@
+﻿vendor/
+data/*.sqlite
+data/*.sqlite-journal
+.php-cs-fixer.cache
+.phpunit.cache/
+.phpunit.cache
+.DS_Store
+Thumbs.db

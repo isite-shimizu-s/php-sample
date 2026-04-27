@@ -1,0 +1,36 @@
+{
+    "name": "shimizu-s/sample",
+    "authors": [
+        {
+            "name": "shimizu-s",
+            "email": "shimizu-s@i-site.co.jp"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^11.5"
+    },
+    "scripts": {
+    "fmt": "php-cs-fixer fix -v",
+    "fmt:check": "php-cs-fixer fix --dry-run -v --diff",
+    "stan": "phpstan analyse",
+    "test": "phpunit",
+    "check": [
+            "@fmt:check",
+            "@stan",
+            "@test"
+        ]
+    }
+}
