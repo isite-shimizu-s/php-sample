@@ -1,5 +1,5 @@
 {
-    "name": "shimizu-s/sample",
+    "name": "isite-shimizu-s/php-sample",
     "authors": [
         {
             "name": "shimizu-s",
@@ -32,5 +32,7 @@
             "@stan",
             "@test"
         ]
-    }
+    },
+    "description": "PHP + SQLite mini bulletin board sample.",
+    "license": "proprietary"
 }
